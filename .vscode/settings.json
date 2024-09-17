@@ -1,0 +1,22 @@
+{
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.ruffEnabled": true,
+    "python.linting.ruffArgs": [
+        "--ignore",
+        "E501",
+        "--max-line-length",
+        "88"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests"
+    ]
+}
+

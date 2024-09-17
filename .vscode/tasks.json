@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Django Server",
+            "type": "shell",
+            "command": "poetry run python lume/manage.py runserver",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Ruff",
+            "type": "shell",
+            "command": "poetry run ruff check .",
+            "problemMatcher": [],
+            "group": "test",
+            "detail": "Lint the project using Ruff"
+        },
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "poetry install",
+            "problemMatcher": []
+        }
+    ]
+}
